@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: test-pg-replication-on-k8s-cluster
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/adriadb
+    username: mohamed
+    password: 1G2Y=4NF<{.vxpW99c23VlP2
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
